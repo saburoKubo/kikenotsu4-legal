@@ -1,1 +1,189 @@
-hello
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>危険物乙4 学習アプリ | 公式ページ</title>
+  <meta name="description" content="危険物取扱者 乙種4類の学習を、テキスト＋問題＋復習で効率化。ブックマーク・進捗・復習履歴のバックアップにも対応。" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:rgba(255,255,255,.08);
+      --card2:rgba(255,255,255,.06);
+      --fg:#f7f7fb;
+      --muted:rgba(255,255,255,.72);
+      --line:rgba(255,255,255,.14);
+      --accent:#7c5cff;
+      --accent2:#29d3ff;
+      --good:#2ee59d;
+      --warn:#ffcc66;
+      --link:#b7a7ff;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif;
+      color:var(--fg);
+      background:
+        radial-gradient(900px 600px at 20% 10%, rgba(124,92,255,.35), transparent 60%),
+        radial-gradient(900px 600px at 90% 30%, rgba(41,211,255,.28), transparent 60%),
+        radial-gradient(900px 600px at 40% 90%, rgba(46,229,157,.18), transparent 60%),
+        var(--bg);
+      line-height:1.7;
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{ max-width:980px; margin:0 auto; padding:28px 16px 64px; }
+    .nav{
+      display:flex; gap:12px; align-items:center; justify-content:space-between;
+      padding:10px 12px; border:1px solid var(--line); border-radius:14px;
+      background:rgba(0,0,0,.18);
+      backdrop-filter: blur(10px);
+    }
+    .brand{ display:flex; gap:10px; align-items:center; }
+    .logo{
+      width:34px; height:34px; border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      box-shadow:0 10px 30px rgba(124,92,255,.18);
+    }
+    .brand b{ font-size:14px; }
+    .navlinks{ display:flex; gap:14px; flex-wrap:wrap; }
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      font-size:13px;
+    }
+
+    .hero{ padding:26px 2px 10px; }
+    h1{ margin:10px 0 10px; font-size:28px; line-height:1.25; letter-spacing:.2px; }
+    .lead{ color:var(--muted); margin:0 0 16px; max-width:62ch; }
+    .ctaRow{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:10px 14px; border-radius:14px; border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      color:var(--fg);
+      font-weight:600;
+    }
+    .btn.primary{
+      border:none;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#061018;
+    }
+
+    .grid{ display:grid; gap:12px; grid-template-columns:repeat(12,1fr); margin-top:18px; }
+    .card{
+      grid-column:span 12;
+      padding:16px; border-radius:16px;
+      border:1px solid var(--line);
+      background:var(--card);
+      backdrop-filter: blur(10px);
+    }
+    .card h2{ margin:0 0 8px; font-size:16px; }
+    .card p{ margin:0; color:var(--muted); }
+    .card ul{ margin:10px 0 0 18px; color:var(--muted); }
+    .badge{ display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.08); border:1px solid var(--line); }
+
+    @media (min-width:780px){
+      h1{ font-size:36px; }
+      .card.span6{ grid-column:span 6; }
+      .card.span4{ grid-column:span 4; }
+    }
+
+    .footer{
+      margin-top:26px; padding-top:18px; border-top:1px solid var(--line);
+      color:rgba(255,255,255,.6); font-size:13px;
+      display:flex; gap:12px; flex-wrap:wrap; justify-content:space-between; align-items:center;
+    }
+    .smalllinks{ display:flex; gap:14px; flex-wrap:wrap; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <b>危険物乙4 学習アプリ</b><br/>
+          <span style="font-size:12px;color:var(--muted);">テキスト＋問題＋復習で効率学習</span>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a class="pill" href="./privacy.html">プライバシーポリシー</a>
+        <a class="pill" href="./terms.html">利用規約</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <span class="badge">📱 iOS対応 / 学習支援アプリ</span>
+      <h1>「読む → 解く → 復習する」<br/>乙4対策を、迷わず積み上げる。</h1>
+      <p class="lead">
+        危険物取扱者 乙種4類の学習を、テキスト・確認問題・忘却曲線ベースの復習で一つに整理。
+        ブックマークや進捗のバックアップにも対応し、学習を続けやすくします。
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="./privacy.html">プライバシーポリシーを見る</a>
+        <a class="btn" href="./terms.html">利用規約を見る</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card span6">
+        <h2>📘 テキスト＋問題で理解を固める</h2>
+        <p>ポイントを短く整理したテキストと、すぐ解ける確認問題で「理解→定着」を早回し。</p>
+        <ul>
+          <li>読みやすい章立て</li>
+          <li>学んだ直後に確認問題</li>
+          <li>苦手の発見が早い</li>
+        </ul>
+      </div>
+
+      <div class="card span6">
+        <h2>🔁 本日の復習（忘却曲線ベース）</h2>
+        <p>復習は「必要なタイミング」に出るのが大事。忘れかけに合わせて復習が出題されます。</p>
+        <ul>
+          <li>復習対象を自動抽出</li>
+          <li>学習の継続をサポート</li>
+          <li>復習履歴の保存</li>
+        </ul>
+      </div>
+
+      <div class="card span4">
+        <h2>🔖 ブックマーク</h2>
+        <p>気になるテキストや問題を保存して、あとで集中して見直せます。</p>
+      </div>
+
+      <div class="card span4">
+        <h2>📊 進捗が見える</h2>
+        <p>どこまで進んだかが分かると、学習計画が立てやすくなります。</p>
+      </div>
+
+      <div class="card span4">
+        <h2>☁️ バックアップ/復元</h2>
+        <p>端末を変えても学習を続けられるよう、クラウド保存に対応します。</p>
+      </div>
+
+      <div class="card">
+        <h2>⚠️ ご注意（表現について）</h2>
+        <p>
+          本アプリは学習支援を目的としています。合格を保証するものではありません。
+          ただし「学びやすさ・続けやすさ」を最優先に改善していきます。
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© 危険物乙4 学習アプリ</div>
+      <div class="smalllinks">
+        <a href="./privacy.html">プライバシーポリシー</a>
+        <a href="./terms.html">利用規約</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
